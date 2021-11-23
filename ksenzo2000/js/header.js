@@ -9,7 +9,9 @@ let menuBtn = document.getElementById('menu-btn');
 let msgBtn = document.getElementById('msg-btn');
 let bagBtn = document.getElementById('bag-btn');
 let heartBtn = document.getElementById('heart-btn');
-
+let topActive = document.getElementById('top_active');
+let closeTopAvtive = document.getElementById('span_menu_active_top');
+let closeActiveMenu = document.getElementById('span_menu_active');
 
 function headerSelectTopOver() {
    document.querySelector('.header__kind-select-top').style.display = "block";
@@ -132,9 +134,31 @@ if(heartBtn) {
 if(menuBtn) {
    const menuActive = document.querySelector('.menu__active');
    menuBtn.addEventListener('click', function (e) {
-      menuActive.classList.toggle('_active');
+      menuActive.classList.add('_active');
    });
 }
+
+if(topActive) {
+   const menuActiveTop = document.querySelector('.menu__active-top');
+   topActive.addEventListener('click', function(e) {
+      menuActiveTop.classList.add('_active');
+   });
+}
+
+if (closeTopAvtive) {
+   const menuActiveTop = document.querySelector('.menu__active-top');
+   closeTopAvtive.addEventListener('click', function(e) {
+      menuActiveTop.classList.remove('_active');
+   });
+}
+
+if (closeActiveMenu) {
+   const menuActive = document.querySelector('.menu__active');
+   closeActiveMenu.addEventListener('click', function (e) {
+      menuActive.classList.remove('_active');
+   });
+}
+
 
 
 
