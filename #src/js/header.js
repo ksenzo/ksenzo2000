@@ -11,8 +11,12 @@ let bagBtn = document.getElementById('bag-btn');
 let heartBtn = document.getElementById('heart-btn');
 let topActive = document.getElementById('top_active');
 let bottomActive = document.getElementById('bottom_active');
+let jacketsActive = document.getElementById('jackets_active');
+let elseActive = document.getElementById('else_active');
 let closeTopActive = document.getElementById('span_menu_active_top');
 let closeBottomActive = document.getElementById('span_menu_active_bottom');
+let closeJacketsActive = document.getElementById('span_menu_active_jackets');
+let closeElseActive = document.getElementById('span_menu_active_else');
 let closeActiveMenu = document.getElementById('span_menu_active');
 
 //let selector = document.querySelector('.header__kind-select-top');
@@ -143,6 +147,34 @@ if (closeActiveMenu) {
    });
 }
 
+if(jacketsActive) {
+   const menuActiveJackets = document.querySelector('.menu__active-jackets');
+   jacketsActive.addEventListener('click', function(e) {
+      menuActiveJackets.classList.add('_active');
+   });
+}
+
+if (closeJacketsActive) {
+   const menuActiveJackets = document.querySelector('.menu__active-jackets');
+   closeJacketsActive.addEventListener('click', function(e) {
+      menuActiveJackets.classList.remove('_active');
+   });
+}
+
+
+if(elseActive) {
+   const menuActiveElse = document.querySelector('.menu__active-else');
+   elseActive.addEventListener('click', function(e) {
+      menuActiveElse.classList.add('_active');
+   });
+}
+
+if (closeElseActive) {
+   const menuActiveElse = document.querySelector('.menu__active-else');
+   closeElseActive.addEventListener('click', function(e) {
+      menuActiveElse.classList.remove('_active');
+   });
+}
 
 
 
