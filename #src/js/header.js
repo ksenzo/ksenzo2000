@@ -10,7 +10,9 @@ let msgBtn = document.getElementById('msg-btn');
 let bagBtn = document.getElementById('bag-btn');
 let heartBtn = document.getElementById('heart-btn');
 let topActive = document.getElementById('top_active');
-let closeTopAvtive = document.getElementById('span_menu_active_top');
+let bottomActive = document.getElementById('bottom_active');
+let closeTopActive = document.getElementById('span_menu_active_top');
+let closeBottomActive = document.getElementById('span_menu_active_bottom');
 let closeActiveMenu = document.getElementById('span_menu_active');
 
 //let selector = document.querySelector('.header__kind-select-top');
@@ -113,10 +115,24 @@ if(topActive) {
    });
 }
 
-if (closeTopAvtive) {
+if (closeTopActive) {
    const menuActiveTop = document.querySelector('.menu__active-top');
-   closeTopAvtive.addEventListener('click', function(e) {
+   closeTopActive.addEventListener('click', function(e) {
       menuActiveTop.classList.remove('_active');
+   });
+}
+
+if(bottomActive) {
+   const menuActiveBottom = document.querySelector('.menu__active-bottom');
+   bottomActive.addEventListener('click', function(e) {
+      menuActiveBottom.classList.add('_active');
+   });
+}
+
+if (closeBottomActive) {
+   const menuActiveBottom = document.querySelector('.menu__active-bottom');
+   closeBottomActive.addEventListener('click', function(e) {
+      menuActiveBottom.classList.remove('_active');
    });
 }
 
