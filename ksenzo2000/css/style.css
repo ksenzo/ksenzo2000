@@ -692,7 +692,7 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 258px;
+  top: 200px;
   margin: 0 37%;
 }
 
@@ -1056,6 +1056,55 @@ a[href^=tel] {
   }
 }
 
+@media (max-width: 1140px) {
+  .header__kind-select-top {
+    width: 1000px;
+    left: -267px;
+  }
+
+  .header__kind-select-bottom {
+    width: 1000px;
+    left: -367px;
+  }
+
+  .header__kind-select-jackets {
+    width: 1000px;
+    left: -456px;
+  }
+
+  .header__kind-select-else {
+    width: 1000px;
+    left: -578px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__kind-select-top {
+    width: 770px;
+    left: -205px;
+  }
+
+  .header__kind-select-bottom {
+    width: 770px;
+    left: -270px;
+  }
+
+  .header__kind-select-jackets {
+    width: 770px;
+    left: -322px;
+  }
+
+  .header__kind-select-else {
+    width: 770px;
+    left: -411px;
+  }
+
+  .header__select-kind {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
 @media (max-width: 400px) {
   .header__top-phone {
     display: none;
@@ -1118,6 +1167,22 @@ a[href^=tel] {
 }
 
  @media (min-width: 1140px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1140px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1024px){
 
 @supports (-webkit-appearance:none){
 
