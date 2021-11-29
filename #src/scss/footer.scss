@@ -1,13 +1,16 @@
 .footer {
    margin-top: 100px;
    background: #fda3c4;
+   @media (max-width: 767px) {
+      margin-bottom: 50px;
+   }
 
    &__container {
    }
 
    &__body {
       padding: 60px 15px;
-      max-width: 1140px;
+      max-width: 1155px;
       margin: 0 auto;
    }
 
@@ -16,11 +19,9 @@
       justify-content: space-between;
       @media (min-width: 320px) {
          flex-wrap: wrap;
-         justify-content: flex-start;
       }
       @media (min-width: 480px) {
          flex-wrap: nowrap;
-         justify-content: space-between;
       }
       @media (min-width: 768px) {
          justify-content: space-evenly;
@@ -135,16 +136,18 @@
       margin-right: 31px;
    }
    @media (min-width: 320px) {
+      flex: 0 1 100%;
       margin-top: 25px;
+   }
+   @media (min-width: 480px) {
+      width: 135px;
+      flex: 0 1 auto;
+      flex-direction: column;
+      margin-top: 0;
       img {
          width: 32px;
          height: 32px;
       }
-   }
-   @media (min-width: 480px) {
-      width: 135px;
-      flex-direction: column;
-      margin-top: 0;
    }
    @media (min-width: 768px) {
       flex-direction: row;
@@ -165,10 +168,11 @@
 
 #column__info {
    @media (min-width: 320px) {
-      margin-right: 60px;
+      flex: 0 1 40%;
    }
    @media (min-width: 480px) {
       margin-right: 0;
+      flex: 0 1 auto;
    }
    @media (min-width: 480px) {
       margin-right: 40px;
@@ -215,9 +219,11 @@
 
 #column__contacts {
    @media (min-width: 320px) {
+      flex: 0 1 40%;
    }
    @media (min-width: 480px) {
       margin-right: 40px;
+      flex: 0 1 auto;
       width: 99px;
    }
    @media (min-width: 768px) {

@@ -766,7 +766,7 @@ h6 {
 
 .footer__body {
   padding: 60px 15px;
-  max-width: 1140px;
+  max-width: 1155px;
   margin: 0 auto;
 }
 
@@ -889,6 +889,186 @@ h6 {
 
 #social__mobile-first {
   display: none;
+}
+
+.instagram__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.instagram__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.instagram__left-side {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.3%;
+          flex: 0 1 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.instagram__left-side-tilte {
+  font-family: "Sunday Best [rus by aLiNcE]";
+  font-size: 54px;
+  line-height: 103px;
+  text-transform: uppercase;
+  color: #1f1f1f;
+}
+
+.instagram__left-side-subtilte {
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 20px;
+  color: #1f1f1f;
+}
+
+.instagram__left-side-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.instagram__left-side-img:first-child {
+  margin-right: 6px;
+}
+
+.instagram__center-side {
+  margin: 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 32.5%;
+          flex: 0 1 32.5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.instagram__center-side-helper {
+  height: 72px;
+}
+
+.instagram__center-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.instagram__right-side {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.3%;
+          flex: 0 1 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.instagram__rigth-side-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.instagram__rigth-side-img:first-child {
+  margin-right: 6px;
+}
+
+.instagram__right-side-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.instagram__rigth-side-tilte {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 51px;
+  color: #f40000;
+}
+
+.instagram__rigth-side-subtilte {
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 20px;
+  color: #1f1f1f;
+  margin-left: 98px;
+}
+
+#first-right-img-insta img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#second-right-img-insta img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#first-left-img-insta img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#second-left-img-insta img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .novinki__h1 {
@@ -1076,9 +1256,6 @@ a[href^=tel] {
   .footer__columns {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
 
   .footer__column-list {
@@ -1093,16 +1270,16 @@ a[href^=tel] {
   }
 
   #column__user {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
     margin-top: 25px;
   }
 
-  #column__user img {
-    width: 32px;
-    height: 32px;
-  }
-
   #column__info {
-    margin-right: 60px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
   }
 
   #column__adress {
@@ -1116,15 +1293,18 @@ a[href^=tel] {
   #column__logo {
     display: none;
   }
+
+  #column__contacts {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+  }
 }
 
 @media (min-width: 480px) {
   .footer__columns {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 
   .footer__column-write {
@@ -1134,6 +1314,9 @@ a[href^=tel] {
 
   #column__user {
     width: 135px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1141,8 +1324,16 @@ a[href^=tel] {
     margin-top: 0;
   }
 
+  #column__user img {
+    width: 32px;
+    height: 32px;
+  }
+
   #column__info {
     margin-right: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
   }
 
   #column__info {
@@ -1151,6 +1342,9 @@ a[href^=tel] {
 
   #column__contacts {
     margin-right: 40px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     width: 99px;
   }
 }
@@ -1176,7 +1370,7 @@ a[href^=tel] {
   }
 
   .header__body {
-    width: 770px;
+    width: 768px;
     border-bottom: none;
   }
 
@@ -1282,6 +1476,20 @@ a[href^=tel] {
   #column__contacts {
     width: 180px;
   }
+
+  .instagram__left-side-tilte {
+    position: absolute;
+    z-index: 2;
+    top: 133px;
+  }
+
+  .instagram__left-side-subtilte {
+    margin-top: 72px;
+  }
+
+  .instagram__center-img {
+    height: 263px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1324,6 +1532,53 @@ a[href^=tel] {
 
   #column__contacts {
     display: none;
+  }
+
+  .instagram__left-side-tilte {
+    position: sticky;
+  }
+
+  .instagram__left-side-subtilte {
+    margin-top: 0;
+  }
+
+  .instagram__center-side-helper {
+    display: none;
+  }
+
+  .instagram__center-img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 370px;
+            flex: 0 1 370px;
+    height: 370px;
+  }
+
+  #first-right-img-insta {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 168px;
+            flex: 0 1 168px;
+    height: 168px;
+  }
+
+  #second-right-img-insta {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 205px;
+            flex: 0 1 205px;
+    height: 205px;
+  }
+
+  #first-left-img-insta {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 205px;
+            flex: 0 1 205px;
+    height: 205px;
+  }
+
+  #second-left-img-insta {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 168px;
+            flex: 0 1 168px;
+    height: 168px;
   }
 }
 
@@ -1379,6 +1634,12 @@ a[href^=tel] {
   .header__select-kind {
     font-size: 13px;
     line-height: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    margin-bottom: 50px;
   }
 }
 
@@ -1458,6 +1719,14 @@ a[href^=tel] {
 }
 
  @media (max-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 767px){
 
 @supports (-webkit-appearance:none){
 

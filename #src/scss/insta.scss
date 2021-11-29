@@ -1,0 +1,177 @@
+.instagram {
+   &__container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+   }
+
+   &__body {
+      display: flex;
+   }
+
+   &__left-side {
+      flex: 0 1 33.3%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   &__left-side-text {
+   }
+
+   &__left-side-tilte {
+      font-family: "Sunday Best [rus by aLiNcE]";
+      font-size: 54px;
+      line-height: 103px;
+      text-transform: uppercase;
+      color: #1f1f1f;
+      @media (min-width: 768px) {
+         position: absolute;
+         z-index: 2;
+         top: 133px;
+      }
+      @media (min-width: 1024px) {
+         position: sticky;
+      }
+   }
+
+   &__left-side-subtilte {
+      font-family: "Montserrat";
+      font-size: 16px;
+      line-height: 20px;
+      color: #1f1f1f;
+      @media (min-width: 1024px) {
+         margin-top: 0;
+      }
+      @media (min-width: 768px) {
+         margin-top: 72px;
+      }
+   }
+
+   &__left-side-images {
+      display: flex;
+      align-items: flex-end;
+   }
+
+   &__left-side-img {
+      &:first-child {
+         margin-right: 6px;
+      }
+   }
+
+   &__center-side {
+      margin: 0 6px;
+      display: flex;
+      flex: 0 1 32.5%;
+      flex-direction: column;
+   }
+
+   &__center-side-helper {
+      height: 72px;
+      @media (min-width: 1024px) {
+         display: none;
+      }
+   }
+
+   &__center-img {
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+      @media (min-width: 1024px) {
+         flex: 0 1 370px;
+         height: 370px;
+      }
+      @media (min-width: 768px) {
+         height: 263px;
+      }
+   }
+
+   &__right-side {
+      flex: 0 1 33.3%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   &__rigth-side-images {
+      display: flex;
+      align-items: flex-start;
+   }
+
+   &__rigth-side-img {
+      &:first-child {
+         margin-right: 6px;
+      }
+   }
+
+   &__right-side-text {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__rigth-side-tilte {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 51px;
+      color: #f40000;
+   }
+
+   &__rigth-side-subtilte {
+      font-family: "Montserrat";
+      font-size: 16px;
+      line-height: 20px;
+      color: #1f1f1f;
+      margin-left: 98px;
+   }
+}
+
+#first-right-img-insta {
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   @media (min-width: 1024px) {
+      flex: 0 1 168px;
+      height: 168px;
+   }
+}
+
+#second-right-img-insta {
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   @media (min-width: 1024px) {
+      flex: 0 1 205px;
+      height: 205px;
+   }
+}
+
+#first-left-img-insta {
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   @media (min-width: 1024px) {
+      flex: 0 1 205px;
+      height: 205px;
+   }
+}
+
+#second-left-img-insta {
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   @media (min-width: 1024px) {
+      flex: 0 1 168px;
+      height: 168px;
+   }
+}
