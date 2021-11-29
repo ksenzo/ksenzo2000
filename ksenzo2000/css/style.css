@@ -607,78 +607,6 @@ h6 {
   transition: all 0.5s ease 0s;
 }
 
-.menu__active-bottom {
-  position: absolute;
-  background: #fda3c4;
-  left: 0;
-  top: -66px;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translate(-100%, 0);
-      -ms-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-.menu__active-bottom._active {
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-.menu__active-jackets {
-  position: absolute;
-  background: #fda3c4;
-  left: 0;
-  top: -66px;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translate(-100%, 0);
-      -ms-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-.menu__active-jackets._active {
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-.menu__active-else {
-  position: absolute;
-  background: #fda3c4;
-  left: 0;
-  top: -66px;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translate(-100%, 0);
-      -ms-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-.menu__active-else._active {
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
 .menu__active-top-wrap {
   position: relative;
 }
@@ -1019,18 +947,6 @@ a[href^=tel] {
   .menu__active-top {
     display: none;
   }
-
-  .menu__active-bottom {
-    display: none;
-  }
-
-  .menu__active-jackets {
-    display: none;
-  }
-
-  .menu__active-else {
-    display: none;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1059,16 +975,6 @@ a[href^=tel] {
 @media (max-width: 400px) {
   .header__top-phone {
     display: none;
-  }
-}
-
-@media (max-width: 386px) {
-  .menu__active-body {
-    margin: 0 30%;
-  }
-
-  .menu__active-top-body {
-    margin: 0 30%;
   }
 }
 @supports (-webkit-appearance:none){
@@ -1126,14 +1032,6 @@ a[href^=tel] {
 }
 
  @media (max-width: 400px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media (max-width: 386px){
 
 @supports (-webkit-appearance:none){
 
