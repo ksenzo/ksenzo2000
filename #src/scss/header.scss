@@ -76,9 +76,6 @@
       cursor: pointer;
    }
 
-   &__top-adress {
-   }
-
    &__top-contact {
       display: flex;
       color: #fda3c4;
@@ -123,9 +120,6 @@
    &__top-phone-icon {
       margin-right: 7px;
       cursor: pointer;
-   }
-
-   &__top-number {
    }
 
    &__top-logo {
@@ -211,9 +205,6 @@
       @media (min-width: 768px) {
          display: block;
       }
-   }
-
-   &__bottom {
    }
 
    &__bottom-kinds {
@@ -442,10 +433,7 @@
    top: 200px;
    display: flex;
    flex-direction: column;
-   margin: 0 37%;
-   @media (max-width: 386px) {
-      margin: 0 30%;
-   }
+   margin: 0 30%;
 }
 .menu__active-title {
    font-family: "Sunday Best [rus by aLiNcE]";
@@ -591,10 +579,7 @@
       display: flex;
       flex-direction: column;
       top: 200px;
-      margin: 0 37%;
-      @media (max-width: 386px) {
-         margin: 0 30%;
-      }
+      margin: 0 29%;
    }
 
    &__active-top-title {

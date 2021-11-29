@@ -1,0 +1,233 @@
+.footer {
+   margin-top: 100px;
+   background: #fda3c4;
+
+   &__container {
+   }
+
+   &__body {
+      padding: 60px 15px;
+      max-width: 1140px;
+      margin: 0 auto;
+   }
+
+   &__columns {
+      display: flex;
+      justify-content: space-between;
+      @media (min-width: 320px) {
+         flex-wrap: wrap;
+         justify-content: flex-start;
+      }
+      @media (min-width: 480px) {
+         flex-wrap: nowrap;
+         justify-content: space-between;
+      }
+      @media (min-width: 768px) {
+         justify-content: space-evenly;
+      }
+      @media (min-width: 1024px) {
+         justify-content: space-between;
+      }
+   }
+
+   &__column {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__column-text {
+      display: flex;
+      flex-direction: column;
+      max-width: 160px;
+   }
+
+   &__column-images {
+      display: flex;
+      cursor: pointer;
+   }
+
+   &__column-image1 {
+      margin-right: 16px;
+      &:hover {
+         img {
+            transition: all 1s ease 0s;
+            filter: invert(20%) sepia(98%) saturate(6799%) hue-rotate(358deg) brightness(89%) contrast(118%);
+         }
+      }
+   }
+
+   &__column-image2 {
+      &:hover {
+         img {
+            transition: all 1s ease 0s;
+            filter: invert(20%) sepia(98%) saturate(6799%) hue-rotate(358deg) brightness(89%) contrast(118%);
+         }
+      }
+   }
+
+   &__column-tilte {
+      font-family: "Sunday Best [rus by aLiNcE]";
+      font-size: 12px;
+      line-height: 23px;
+      color: #f40000;
+      margin-bottom: 14px;
+      cursor: pointer;
+      &:hover {
+         text-decoration: underline;
+         text-underline-offset: 4px;
+      }
+   }
+
+   &__column-list {
+      font-family: "Montserrat";
+      font-size: 12px;
+      line-height: 15px;
+      color: #ffffff;
+      & :not(:last-child) {
+         margin-bottom: 10px;
+      }
+      @media (min-width: 320px) {
+         font-size: 10px;
+         line-height: 12px;
+      }
+      @media (min-width: 768px) {
+         font-size: 12px;
+         line-height: 15px;
+      }
+   }
+
+   &__column-element {
+      cursor: pointer;
+      &:hover {
+         color: #f40000;
+      }
+   }
+
+   &__column-images {
+   }
+
+   &__column-write {
+      font-family: "Montserrat";
+      font-size: 12px;
+      line-height: 15px;
+      color: #ffffff;
+      margin-bottom: 19px;
+      @media (min-width: 320px) {
+         width: 211px;
+         font-size: 10px;
+         line-height: 12px;
+      }
+      @media (min-width: 480px) {
+         width: 135px;
+         margin-top: 12px;
+      }
+      @media (min-width: 768px) {
+         font-size: 12px;
+         line-height: 15px;
+         margin-top: 0;
+      }
+   }
+}
+
+#column__user {
+   flex-direction: row;
+   img {
+      margin-right: 31px;
+   }
+   @media (min-width: 320px) {
+      margin-top: 25px;
+      img {
+         width: 32px;
+         height: 32px;
+      }
+   }
+   @media (min-width: 480px) {
+      width: 135px;
+      flex-direction: column;
+      margin-top: 0;
+   }
+   @media (min-width: 768px) {
+      flex-direction: row;
+      width: 230px;
+      img {
+         width: 51px;
+         height: 51px;
+      }
+   }
+   @media (min-width: 1024px) {
+      
+   }
+}
+
+#column__social {
+   width: 80px;
+}
+
+#column__info {
+   @media (min-width: 320px) {
+      margin-right: 60px;
+   }
+   @media (min-width: 480px) {
+      margin-right: 0;
+   }
+   @media (min-width: 480px) {
+      margin-right: 40px;
+   }
+   @media (min-width: 768px) {
+      margin-right: 80px;
+   }
+   @media (min-width: 1024px) {
+      margin-right: 0;
+   }
+}
+
+#column__adress {
+   @media (min-width: 320px) {
+      display: none;
+   }
+   @media (min-width: 1024px) {
+      display: block;
+   }
+}
+
+#column__social {
+   @media (min-width: 320px) {
+      display: none;
+   }
+   @media (min-width: 1024px) {
+      display: block;
+   }
+
+}
+
+#corrent__adress {
+   width: 180px;
+}
+
+#column__logo {
+   @media (min-width: 320px) {
+      display: none;
+   }
+   @media (min-width: 1024px) {
+      display: block;
+   }
+}
+
+#column__contacts {
+   @media (min-width: 320px) {
+   }
+   @media (min-width: 480px) {
+      margin-right: 40px;
+      width: 99px;
+   }
+   @media (min-width: 768px) {
+      width: 180px;
+   }
+   @media (min-width: 1024px) {
+      display: none;
+   }
+}
+
+#social__mobile-first {
+   display: none;
+}
