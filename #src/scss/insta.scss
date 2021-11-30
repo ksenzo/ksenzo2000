@@ -7,10 +7,30 @@
 
    &__body {
       display: flex;
+      @media (min-width: 320px) {
+         flex-wrap: wrap;
+      }
+      @media (min-width: 768px) {
+         flex-wrap: nowrap;
+      }
+      @media (max-width: 480px) {
+         flex-wrap: nowrap;
+         flex-direction: column;
+      }
+   }
+
+   &__left {
+      display: flex;
+      @media (min-width: 768px) {
+         flex: 0 1 66%;
+      }
+      @media (max-width: 480px) {
+         flex-direction: column;
+      }
    }
 
    &__left-side {
-      flex: 0 1 33.3%;
+      flex: 0 1 49.5%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -21,17 +41,28 @@
 
    &__left-side-tilte {
       font-family: "Sunday Best [rus by aLiNcE]";
-      font-size: 54px;
-      line-height: 103px;
       text-transform: uppercase;
       color: #1f1f1f;
       @media (min-width: 768px) {
          position: absolute;
          z-index: 2;
-         top: 133px;
+         top: 94px;
+         font-size: 54px;
+         line-height: 103px;
       }
       @media (min-width: 1024px) {
          position: sticky;
+         font-size: 54px;
+         line-height: 103px;
+      }
+      @media (min-width: 320px) {
+         position: sticky;
+         font-size: 26px;
+         line-height: 50px;
+      }
+      @media (min-width: 480px) {
+         font-size: 36px;
+         line-height: 69px;
       }
    }
 
@@ -44,13 +75,19 @@
          margin-top: 0;
       }
       @media (min-width: 768px) {
-         margin-top: 72px;
+         margin-top: 78px;
       }
    }
 
    &__left-side-images {
       display: flex;
       align-items: flex-end;
+      @media (min-width: 768px) {
+         margin-bottom: 0;
+      }
+      @media (max-width: 480px) {
+         margin-bottom: 6px;
+      }
    }
 
    &__left-side-img {
@@ -62,13 +99,22 @@
    &__center-side {
       margin: 0 6px;
       display: flex;
-      flex: 0 1 32.5%;
+      flex: 0 1 49.5%;
       flex-direction: column;
+      @media (max-width: 480px) {
+         margin: 0;
+      }
    }
 
    &__center-side-helper {
       height: 72px;
       @media (min-width: 1024px) {
+         display: none;
+      }
+      @media (min-width: 768px) {
+         display: block;
+      }
+      @media (min-width: 320px) {
          display: none;
       }
    }
@@ -86,18 +132,32 @@
       @media (min-width: 768px) {
          height: 263px;
       }
+      @media (max-width: 555px) {
+         height: 260px;
+      }
+      @media (max-width: 480px) {
+         height: unset;
+      }
    }
 
    &__right-side {
-      flex: 0 1 33.3%;
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
+      @media (min-width: 768px) {
+         flex-direction: column;
+         flex: 0 1 33.3%;
+      }
+      @media (max-width: 480px) {
+         flex-direction: column;
+      }
    }
 
    &__rigth-side-images {
       display: flex;
       align-items: flex-start;
+      @media (max-width: 768px) {
+         margin-top: 6px;
+      }
    }
 
    &__rigth-side-img {
@@ -109,14 +169,23 @@
    &__right-side-text {
       display: flex;
       flex-direction: column;
+      @media (min-width: 768px) {
+         justify-content: unset;
+      }
+      @media (max-width: 768px) {
+         justify-content: flex-end;
+      }
    }
 
    &__rigth-side-tilte {
       font-family: "Montserrat";
       font-weight: 600;
+      color: #f40000;
       font-size: 42px;
       line-height: 51px;
-      color: #f40000;
+      @media (max-width: 768px) {
+         font-size: 31px;
+      }
    }
 
    &__rigth-side-subtilte {
@@ -138,6 +207,9 @@
       flex: 0 1 168px;
       height: 168px;
    }
+   @media (max-width: 480px) {
+      flex: 0 1 50%;
+   }
 }
 
 #second-right-img-insta {
@@ -149,6 +221,9 @@
    @media (min-width: 1024px) {
       flex: 0 1 205px;
       height: 205px;
+   }
+   @media (max-width: 480px) {
+      flex: 0 1 50%;
    }
 }
 
@@ -162,6 +237,9 @@
       flex: 0 1 205px;
       height: 205px;
    }
+   @media (max-width: 480px) {
+      flex: 0 1 50%;
+   }
 }
 
 #second-left-img-insta {
@@ -173,5 +251,8 @@
    @media (min-width: 1024px) {
       flex: 0 1 168px;
       height: 168px;
+   }
+   @media (max-width: 480px) {
+      flex: 0 1 50%;
    }
 }

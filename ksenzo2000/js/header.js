@@ -56,7 +56,7 @@ if (elseSelect) {
 
 window.onscroll = function showHeader() {
    let fixedHeader = document.querySelector('.header');
-   if (window.pageYOffset > 75) {
+   if (window.pageYOffset > 150) {
       fixedHeader.classList.add('header__fixed');
    } else {
       fixedHeader.classList.remove('header__fixed');

@@ -256,6 +256,7 @@
       border-bottom: #909090 1px solid;
       border-top: 1px solid #fda3c4;
       background: #ffffff;
+      z-index: 4;
       @media (max-width: 1140px) {
          width: 1000px;
          left: -267px;
@@ -277,6 +278,7 @@
       border-bottom: #909090 1px solid;
       border-top: 1px solid #fda3c4;
       background: #ffffff;
+      z-index: 4;
       @media (max-width: 1140px) {
          width: 1000px;
          left: -367px;
@@ -298,6 +300,7 @@
       border-bottom: #909090 1px solid;
       border-top: 1px solid #fda3c4;
       background: #ffffff;
+      z-index: 4;
       @media (max-width: 1140px) {
          width: 1000px;
          left: -456px;
@@ -319,6 +322,7 @@
       border-bottom: #909090 1px solid;
       border-top: 1px solid #fda3c4;
       background: #ffffff;
+      z-index: 4;
       @media (max-width: 1140px) {
          width: 1000px;
          left: -578px;
@@ -414,6 +418,7 @@
    left: -100%;
    transition: all 0.5s ease 0s;
    overflow: auto;
+   z-index: 3;
    @media (min-width: 768px) {
       display: none;
    }
@@ -422,6 +427,7 @@
 .menu__active._active {
    transition: all 0.5s ease 0s;
    left: 0;
+   z-index: 3;
 }
 
 .menu__active-wrap {
@@ -502,6 +508,7 @@
       width: 100%;
       height: 100%;
       transform: translate(-100%, 0);
+      z-index: 3;
       transition: all 0.5s ease 0s;
       @media (min-width: 768px) {
          display: none;
@@ -511,6 +518,7 @@
    &__active-top._active {
       transform: translate(0, 0);
       transition: all 0.5s ease 0s;
+      z-index: 3;
    }
 
    &__active-bottom {
@@ -520,6 +528,7 @@
       top: -66px;
       width: 100%;
       height: 100%;
+      z-index: 3;
       transform: translate(-100%, 0);
       transition: all 0.5s ease 0s;
       @media (min-width: 768px) {
@@ -530,6 +539,7 @@
    &__active-bottom._active {
       transform: translate(0, 0);
       transition: all 0.5s ease 0s;
+      z-index: 3;
    }
 
    &__active-jackets {
@@ -541,6 +551,7 @@
       height: 100%;
       transform: translate(-100%, 0);
       transition: all 0.5s ease 0s;
+      z-index: 3;
       @media (min-width: 768px) {
          display: none;
       }
@@ -549,6 +560,7 @@
    &__active-jackets._active {
       transform: translate(0, 0);
       transition: all 0.5s ease 0s;
+      z-index: 3;
    }
 
    &__active-else {
@@ -557,6 +569,7 @@
       left: 0;
       top: -66px;
       width: 100%;
+      z-index: 3;
       height: 100%;
       transform: translate(-100%, 0);
       transition: all 0.5s ease 0s;
@@ -568,6 +581,7 @@
    &__active-else._active {
       transform: translate(0, 0);
       transition: all 0.5s ease 0s;
+      z-index: 3;
    }
 
    &__active-top-wrap {

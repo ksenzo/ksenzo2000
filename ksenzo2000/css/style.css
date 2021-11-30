@@ -336,6 +336,7 @@ h6 {
   border-bottom: #909090 1px solid;
   border-top: 1px solid #fda3c4;
   background: #ffffff;
+  z-index: 4;
 }
 
 .header__kind-select-bottom {
@@ -349,6 +350,7 @@ h6 {
   border-bottom: #909090 1px solid;
   border-top: 1px solid #fda3c4;
   background: #ffffff;
+  z-index: 4;
 }
 
 .header__kind-select-jackets {
@@ -362,6 +364,7 @@ h6 {
   border-bottom: #909090 1px solid;
   border-top: 1px solid #fda3c4;
   background: #ffffff;
+  z-index: 4;
 }
 
 .header__kind-select-else {
@@ -375,6 +378,7 @@ h6 {
   border-bottom: #909090 1px solid;
   border-top: 1px solid #fda3c4;
   background: #ffffff;
+  z-index: 4;
 }
 
 .header__select-kinds {
@@ -490,6 +494,7 @@ h6 {
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   overflow: auto;
+  z-index: 3;
 }
 
 .menu__active._active {
@@ -497,6 +502,7 @@ h6 {
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   left: 0;
+  z-index: 3;
 }
 
 .menu__active-wrap {
@@ -593,6 +599,7 @@ h6 {
   -webkit-transform: translate(-100%, 0);
       -ms-transform: translate(-100%, 0);
           transform: translate(-100%, 0);
+  z-index: 3;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -605,6 +612,7 @@ h6 {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  z-index: 3;
 }
 
 .menu__active-bottom {
@@ -614,6 +622,7 @@ h6 {
   top: -66px;
   width: 100%;
   height: 100%;
+  z-index: 3;
   -webkit-transform: translate(-100%, 0);
       -ms-transform: translate(-100%, 0);
           transform: translate(-100%, 0);
@@ -629,6 +638,7 @@ h6 {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  z-index: 3;
 }
 
 .menu__active-jackets {
@@ -644,6 +654,7 @@ h6 {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  z-index: 3;
 }
 
 .menu__active-jackets._active {
@@ -653,6 +664,7 @@ h6 {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  z-index: 3;
 }
 
 .menu__active-else {
@@ -661,6 +673,7 @@ h6 {
   left: 0;
   top: -66px;
   width: 100%;
+  z-index: 3;
   height: 100%;
   -webkit-transform: translate(-100%, 0);
       -ms-transform: translate(-100%, 0);
@@ -677,6 +690,7 @@ h6 {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  z-index: 3;
 }
 
 .menu__active-top-wrap {
@@ -903,10 +917,16 @@ h6 {
   display: flex;
 }
 
+.instagram__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .instagram__left-side {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 33.3%;
-          flex: 0 1 33.3%;
+      -ms-flex: 0 1 49.5%;
+          flex: 0 1 49.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -921,8 +941,6 @@ h6 {
 
 .instagram__left-side-tilte {
   font-family: "Sunday Best [rus by aLiNcE]";
-  font-size: 54px;
-  line-height: 103px;
   text-transform: uppercase;
   color: #1f1f1f;
 }
@@ -953,8 +971,8 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 32.5%;
-          flex: 0 1 32.5%;
+      -ms-flex: 0 1 49.5%;
+          flex: 0 1 49.5%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -973,16 +991,9 @@ h6 {
 }
 
 .instagram__right-side {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 33.3%;
-          flex: 0 1 33.3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1014,9 +1025,9 @@ h6 {
 .instagram__rigth-side-tilte {
   font-family: "Montserrat";
   font-weight: 600;
+  color: #f40000;
   font-size: 42px;
   line-height: 51px;
-  color: #f40000;
 }
 
 .instagram__rigth-side-subtilte {
@@ -1065,7 +1076,7 @@ body {
           flex-direction: column;
 }
 
-nav {
+main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -1299,6 +1310,21 @@ a[href^=tel] {
         -ms-flex: 0 1 40%;
             flex: 0 1 40%;
   }
+
+  .instagram__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .instagram__left-side-tilte {
+    position: sticky;
+    font-size: 26px;
+    line-height: 50px;
+  }
+
+  .instagram__center-side-helper {
+    display: none;
+  }
 }
 
 @media (min-width: 480px) {
@@ -1346,6 +1372,11 @@ a[href^=tel] {
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
     width: 99px;
+  }
+
+  .instagram__left-side-tilte {
+    font-size: 36px;
+    line-height: 69px;
   }
 }
 
@@ -1477,18 +1508,55 @@ a[href^=tel] {
     width: 180px;
   }
 
+  .instagram__body {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .instagram__left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 66%;
+            flex: 0 1 66%;
+  }
+
   .instagram__left-side-tilte {
     position: absolute;
     z-index: 2;
-    top: 133px;
+    top: 94px;
+    font-size: 54px;
+    line-height: 103px;
   }
 
   .instagram__left-side-subtilte {
-    margin-top: 72px;
+    margin-top: 78px;
+  }
+
+  .instagram__left-side-images {
+    margin-bottom: 0;
+  }
+
+  .instagram__center-side-helper {
+    display: block;
   }
 
   .instagram__center-img {
     height: 263px;
+  }
+
+  .instagram__right-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33.3%;
+            flex: 0 1 33.3%;
+  }
+
+  .instagram__right-side-text {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
   }
 }
 
@@ -1536,6 +1604,8 @@ a[href^=tel] {
 
   .instagram__left-side-tilte {
     position: sticky;
+    font-size: 54px;
+    line-height: 103px;
   }
 
   .instagram__left-side-subtilte {
@@ -1637,9 +1707,92 @@ a[href^=tel] {
   }
 }
 
+@media (max-width: 768px) {
+  .instagram__rigth-side-images {
+    margin-top: 6px;
+  }
+
+  .instagram__right-side-text {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .instagram__rigth-side-tilte {
+    font-size: 31px;
+  }
+}
+
 @media (max-width: 767px) {
   .footer {
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 555px) {
+  .instagram__center-img {
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .instagram__body {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .instagram__left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .instagram__left-side-images {
+    margin-bottom: 6px;
+  }
+
+  .instagram__center-side {
+    margin: 0;
+  }
+
+  .instagram__center-img {
+    height: unset;
+  }
+
+  .instagram__right-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  #first-right-img-insta {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  #second-right-img-insta {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  #first-left-img-insta {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  #second-left-img-insta {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
   }
 }
 
@@ -1726,7 +1879,31 @@ a[href^=tel] {
 
 }
 
+ @media (max-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
  @media (max-width: 767px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 555px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 480px){
 
 @supports (-webkit-appearance:none){
 
