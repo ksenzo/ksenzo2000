@@ -6,6 +6,7 @@
 @import "header";
 @import "footer";
 @import "insta";
+@import "element-of-cloth";
 
 $rose: #fda3c4;
 $red: #f40000;
@@ -14,9 +15,14 @@ $lightrose: #ffe6ef;
 $white: #ffffff;
 $gray: #909090;
 
-body {
+.body {
    display: flex;
    flex-direction: column;
+}
+
+.body._noscroll {
+   overflow: hidden;
+   height: 100vh;
 }
 
 main {
