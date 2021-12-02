@@ -11,8 +11,12 @@ let bagBtn = document.getElementById('bag-btn');
 let heartBtn = document.getElementById('heart-btn');
 let topActive = document.getElementById('top_active');
 let bottomActive = document.getElementById('bottom_active');
+let jacketsActive = document.getElementById('jackets_active');
+let elseActive = document.getElementById('else_active');
 let closeTopActive = document.getElementById('span_menu_active_top');
 let closeBottomActive = document.getElementById('span_menu_active_bottom');
+let closeJacketsActive = document.getElementById('span_menu_active_jackets');
+let closeElseActive = document.getElementById('span_menu_active_else');
 let closeActiveMenu = document.getElementById('span_menu_active');
 
 //let selector = document.querySelector('.header__kind-select-top');
@@ -52,7 +56,7 @@ if (elseSelect) {
 
 window.onscroll = function showHeader() {
    let fixedHeader = document.querySelector('.header');
-   if (window.pageYOffset > 75) {
+   if (window.pageYOffset > 150) {
       fixedHeader.classList.add('header__fixed');
    } else {
       fixedHeader.classList.remove('header__fixed');
@@ -65,73 +69,88 @@ function colorMenuBtn(selector, filterValue) {
 }
 
 if (menuBtn) {
-   menuBtn.addEventListener('mouseover', () => 
-   colorMenuBtn(menuBtn, 'invert(91%) sepia(21%) saturate(1678%) hue-rotate(287deg) brightness(102%) contrast(98%)'));
-   menuBtn.addEventListener('mouseout', () => 
-   colorMenuBtn(menuBtn, 'invert(0%) sepia(0%) saturate(7%) hue-rotate(253deg) brightness(103%) contrast(100%)'));
+   menuBtn.addEventListener('mouseover', () =>
+      colorMenuBtn(menuBtn, 
+         'invert(91%) sepia(21%) saturate(1678%) hue-rotate(287deg) brightness(102%) contrast(98%)'));
+   menuBtn.addEventListener('mouseout', () =>
+      colorMenuBtn(menuBtn, 
+         'invert(0%) sepia(0%) saturate(7%) hue-rotate(253deg) brightness(103%) contrast(100%)'));
 }
 
 if (msgBtn) {
-   msgBtn.addEventListener('mouseover', () => 
-   colorMenuBtn(msgBtn, 'invert(91%) sepia(21%) saturate(1678%) hue-rotate(287deg) brightness(102%) contrast(98%)'));
-   msgBtn.addEventListener('mouseout', () => 
-   colorMenuBtn(msgBtn, 'invert(0%) sepia(0%) saturate(7%) hue-rotate(253deg) brightness(103%) contrast(100%)'));
+   msgBtn.addEventListener('mouseover', () =>
+      colorMenuBtn(msgBtn, 
+         'invert(91%) sepia(21%) saturate(1678%) hue-rotate(287deg) brightness(102%) contrast(98%)'));
+   msgBtn.addEventListener('mouseout', () =>
+      colorMenuBtn(msgBtn, 
+         'invert(0%) sepia(0%) saturate(7%) hue-rotate(253deg) brightness(103%) contrast(100%)'));
 }
 
 if (bagBtn) {
-   bagBtn.addEventListener('mouseover', () => 
-   colorMenuBtn(bagBtn, 'invert(91%) sepia(21%) saturate(1678%) hue-rotate(287deg) brightness(102%) contrast(98%)'));
-   bagBtn.addEventListener('mouseout', () => 
-   colorMenuBtn(bagBtn, 'invert(0%) sepia(0%) saturate(7%) hue-rotate(253deg) brightness(103%) contrast(100%)'));
+   bagBtn.addEventListener('mouseover', () =>
+      colorMenuBtn(bagBtn, 
+         'invert(91%) sepia(21%) saturate(1678%) hue-rotate(287deg) brightness(102%) contrast(98%)'));
+   bagBtn.addEventListener('mouseout', () =>
+      colorMenuBtn(bagBtn, 
+         'invert(0%) sepia(0%) saturate(7%) hue-rotate(253deg) brightness(103%) contrast(100%)'));
 }
 
 if (heartBtn) {
-   heartBtn.addEventListener('mouseover', () => 
-   colorMenuBtn(heartBtn, 'invert(91%) sepia(21%) saturate(1678%) hue-rotate(287deg) brightness(102%) contrast(98%)'));
-   heartBtn.addEventListener('mouseout', () => 
-   colorMenuBtn(heartBtn, 'invert(0%) sepia(0%) saturate(7%) hue-rotate(253deg) brightness(103%) contrast(100%)'));
+   heartBtn.addEventListener('mouseover', () =>
+      colorMenuBtn(heartBtn, 
+         'invert(91%) sepia(21%) saturate(1678%) hue-rotate(287deg) brightness(102%) contrast(98%)'));
+   heartBtn.addEventListener('mouseout', () =>
+      colorMenuBtn(heartBtn, 
+         'invert(0%) sepia(0%) saturate(7%) hue-rotate(253deg) brightness(103%) contrast(100%)'));
 }
+
 
 if (menuBtn) {
-   const menuActive = document.querySelector('.menu__active');
-   menuBtn.addEventListener('click', function (e) {
-      menuActive.classList.toggle('_active');
-   });
-}
-
-
-
-if(menuBtn) {
    const menuActive = document.querySelector('.menu__active');
    menuBtn.addEventListener('click', function (e) {
       menuActive.classList.add('_active');
    });
 }
 
-if(topActive) {
+if (menuBtn) {
+   const bodyNoscroll = document.querySelector('.body');
+   menuBtn.addEventListener('click', function (e) {
+      bodyNoscroll.classList.add('_noscroll');
+   });
+}
+
+if (closeActiveMenu) {
+   const bodyNoscroll = document.querySelector('.body');
+   closeActiveMenu.addEventListener('click', function (e) {
+      bodyNoscroll.classList.remove('_noscroll');
+   });
+}
+
+
+if (topActive) {
    const menuActiveTop = document.querySelector('.menu__active-top');
-   topActive.addEventListener('click', function(e) {
+   topActive.addEventListener('click', function (e) {
       menuActiveTop.classList.add('_active');
    });
 }
 
 if (closeTopActive) {
    const menuActiveTop = document.querySelector('.menu__active-top');
-   closeTopActive.addEventListener('click', function(e) {
+   closeTopActive.addEventListener('click', function (e) {
       menuActiveTop.classList.remove('_active');
    });
 }
 
-if(bottomActive) {
+if (bottomActive) {
    const menuActiveBottom = document.querySelector('.menu__active-bottom');
-   bottomActive.addEventListener('click', function(e) {
+   bottomActive.addEventListener('click', function (e) {
       menuActiveBottom.classList.add('_active');
    });
 }
 
 if (closeBottomActive) {
    const menuActiveBottom = document.querySelector('.menu__active-bottom');
-   closeBottomActive.addEventListener('click', function(e) {
+   closeBottomActive.addEventListener('click', function (e) {
       menuActiveBottom.classList.remove('_active');
    });
 }
@@ -143,6 +162,34 @@ if (closeActiveMenu) {
    });
 }
 
+if (jacketsActive) {
+   const menuActiveJackets = document.querySelector('.menu__active-jackets');
+   jacketsActive.addEventListener('click', function (e) {
+      menuActiveJackets.classList.add('_active');
+   });
+}
+
+if (closeJacketsActive) {
+   const menuActiveJackets = document.querySelector('.menu__active-jackets');
+   closeJacketsActive.addEventListener('click', function (e) {
+      menuActiveJackets.classList.remove('_active');
+   });
+}
+
+
+if (elseActive) {
+   const menuActiveElse = document.querySelector('.menu__active-else');
+   elseActive.addEventListener('click', function (e) {
+      menuActiveElse.classList.add('_active');
+   });
+}
+
+if (closeElseActive) {
+   const menuActiveElse = document.querySelector('.menu__active-else');
+   closeElseActive.addEventListener('click', function (e) {
+      menuActiveElse.classList.remove('_active');
+   });
+}
 
 
 

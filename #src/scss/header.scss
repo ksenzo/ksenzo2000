@@ -2,7 +2,7 @@
    font-family: "Montserrat";
    background: #ffffff;
    width: 100%;
-
+   z-index: 4;
    &__fixed {
       position: fixed;
       top: 0;
@@ -50,7 +50,7 @@
       display: flex;
       flex-direction: column;
       @media (min-width: 768px) {
-         width: 770px;
+         width: 768px;
          border-bottom: none;
       }
       @media (min-width: 1024px) {
@@ -74,9 +74,6 @@
    &__top-img-location {
       margin-right: 7px;
       cursor: pointer;
-   }
-
-   &__top-adress {
    }
 
    &__top-contact {
@@ -123,9 +120,6 @@
    &__top-phone-icon {
       margin-right: 7px;
       cursor: pointer;
-   }
-
-   &__top-number {
    }
 
    &__top-logo {
@@ -213,9 +207,6 @@
       }
    }
 
-   &__bottom {
-   }
-
    &__bottom-kinds {
       display: flex;
       justify-content: space-between;
@@ -265,6 +256,15 @@
       border-bottom: #909090 1px solid;
       border-top: 1px solid #fda3c4;
       background: #ffffff;
+      z-index: 4;
+      @media (max-width: 1140px) {
+         width: 1000px;
+         left: -267px;
+      }
+      @media (max-width: 1024px) {
+         width: 770px;
+         left: -205px;
+      }
    }
 
    &__kind-select-bottom {
@@ -278,6 +278,15 @@
       border-bottom: #909090 1px solid;
       border-top: 1px solid #fda3c4;
       background: #ffffff;
+      z-index: 4;
+      @media (max-width: 1140px) {
+         width: 1000px;
+         left: -367px;
+      }
+      @media (max-width: 1024px) {
+         width: 770px;
+         left: -270px;
+      }
    }
 
    &__kind-select-jackets {
@@ -291,6 +300,15 @@
       border-bottom: #909090 1px solid;
       border-top: 1px solid #fda3c4;
       background: #ffffff;
+      z-index: 4;
+      @media (max-width: 1140px) {
+         width: 1000px;
+         left: -456px;
+      }
+      @media (max-width: 1024px) {
+         width: 770px;
+         left: -322px;
+      }
    }
 
    &__kind-select-else {
@@ -304,6 +322,15 @@
       border-bottom: #909090 1px solid;
       border-top: 1px solid #fda3c4;
       background: #ffffff;
+      z-index: 4;
+      @media (max-width: 1140px) {
+         width: 1000px;
+         left: -578px;
+      }
+      @media (max-width: 1024px) {
+         width: 770px;
+         left: -411px;
+      }
    }
 
    &__select-kinds {
@@ -322,6 +349,10 @@
          color: #fda3c4;
          font-style: italic;
       }
+      @media (max-width: 1024px) {
+         font-size: 13px;
+         line-height: 16px;
+      }
    }
 
    &__menu {
@@ -333,6 +364,7 @@
       transition: all 0.3s ease 0s;
       left: 0;
       width: 100%;
+      z-index: 5;
       @media (min-width: 768px) {
          opacity: 0;
          transition: all 0.3s ease 0s;
@@ -382,11 +414,12 @@
    width: 100%;
    height: 100%;
    background: #fda3c4;
-   position: absolute;
+   position: fixed;
    top: -66px;
    left: -100%;
    transition: all 0.5s ease 0s;
    overflow: auto;
+   z-index: 5;
    @media (min-width: 768px) {
       display: none;
    }
@@ -395,6 +428,7 @@
 .menu__active._active {
    transition: all 0.5s ease 0s;
    left: 0;
+   z-index: 5;
 }
 
 .menu__active-wrap {
@@ -406,7 +440,7 @@
    top: 200px;
    display: flex;
    flex-direction: column;
-   margin: 0 37%;
+   margin: 0 30%;
 }
 .menu__active-title {
    font-family: "Sunday Best [rus by aLiNcE]";
@@ -475,6 +509,7 @@
       width: 100%;
       height: 100%;
       transform: translate(-100%, 0);
+      z-index: 3;
       transition: all 0.5s ease 0s;
       @media (min-width: 768px) {
          display: none;
@@ -484,6 +519,7 @@
    &__active-top._active {
       transform: translate(0, 0);
       transition: all 0.5s ease 0s;
+      z-index: 3;
    }
 
    &__active-bottom {
@@ -493,6 +529,7 @@
       top: -66px;
       width: 100%;
       height: 100%;
+      z-index: 3;
       transform: translate(-100%, 0);
       transition: all 0.5s ease 0s;
       @media (min-width: 768px) {
@@ -503,6 +540,49 @@
    &__active-bottom._active {
       transform: translate(0, 0);
       transition: all 0.5s ease 0s;
+      z-index: 3;
+   }
+
+   &__active-jackets {
+      position: absolute;
+      background: #fda3c4;
+      left: 0;
+      top: -66px;
+      width: 100%;
+      height: 100%;
+      transform: translate(-100%, 0);
+      transition: all 0.5s ease 0s;
+      z-index: 3;
+      @media (min-width: 768px) {
+         display: none;
+      }
+   }
+
+   &__active-jackets._active {
+      transform: translate(0, 0);
+      transition: all 0.5s ease 0s;
+      z-index: 3;
+   }
+
+   &__active-else {
+      position: absolute;
+      background: #fda3c4;
+      left: 0;
+      top: -66px;
+      width: 100%;
+      z-index: 3;
+      height: 100%;
+      transform: translate(-100%, 0);
+      transition: all 0.5s ease 0s;
+      @media (min-width: 768px) {
+         display: none;
+      }
+   }
+
+   &__active-else._active {
+      transform: translate(0, 0);
+      transition: all 0.5s ease 0s;
+      z-index: 3;
    }
 
    &__active-top-wrap {
@@ -513,8 +593,8 @@
       position: absolute;
       display: flex;
       flex-direction: column;
-      top: 258px;
-      margin: 0 37%;
+      top: 200px;
+      margin: 0 29%;
    }
 
    &__active-top-title {
